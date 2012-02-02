@@ -17,27 +17,28 @@ body {
 
 #head{margin:10px auto 20px auto;width:400px;text-align: center}
 #landing{margin:0 auto;width:740px;background:#fff;padding:0px 20px 20px 20px;}
-#landing h1{font-size:18px;}
+#landing h1{font-size:36px;}
 #landing .content{margin-top:20px;}
 #footer{margin:0 auto;width:600px;padding:15px;}
 </style>
 	
-<div id="head">
-		<img src="https://my.skystack.com/img/logo_black_on_trans.png" title="my.skystack.com" />		</div>
-    
+<div id="head"><img src="https://my.skystack.com/img/logo_black_on_trans.png" title="my.skystack.com" /></div>
+
 <div id="landing" class="ui-corner-all" style="">
 	<div class="content">
-	<p>To manage this server visit <a href="http://my.skystack.com">my.skystack.com</a></p>	
-	
-	<?php
-	
-	if(isset($_GET['show_php']) && $_GET['show_php'] == 1):
-		phpinfo();
-	endif;
-	
-	?>
-</div>
 
+	        <h1>Its Done!</h1>
+
+	        <p>To manage this server visit <a href="https://my.skystack.com">my.skystack.com</a></p>
+
+	        <?php
+
+	        if(isset($_GET['show_php']) && $_GET['show_php'] == 1):
+	                phpinfo();
+	        endif;
+
+	        ?>
+	</div>
 </div>
 </body>	
 </html>
