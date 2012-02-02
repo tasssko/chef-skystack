@@ -7,20 +7,27 @@
 </head>
 <body>
 <style>
+body { 
+	background-color:#eee; font-family:"Lucida Grande", verdana, arial, helvetica, sans-serif; 
+	font-size: 12px; 
+	color:#484848; 
+	margin: 0; padding: 0; 
+	/*min-width: 900px;*/
+}
+
 #head{margin:10px auto 20px auto;width:400px;text-align: center}
 #landing{margin:0 auto;width:740px;background:#fff;padding:0px 20px 20px 20px;}
-#landing h1{font-size:14px;}
+#landing h1{font-size:18px;}
 #landing .content{margin-top:20px;}
 #footer{margin:0 auto;width:600px;padding:15px;}
 </style>
 	
 <div id="head">
-		<img src="http://my.skystack.com/img/logo_black_on_trans.png" title="my.skystack.com" />		</div>
+		<img src="https://my.skystack.com/img/logo_black_on_trans.png" title="my.skystack.com" />		</div>
     
 <div id="landing" class="ui-corner-all" style="">
-	<div class="content"><br/>
-	<p>This server was crafted by Skystack, with the help of some excellent open source tools. We hope you enjoy this server as much as we enjoyed building it.</p>
-	<p>For more on Skystack visit our website <a href="http://www.skystack.com" title="Skystack.com">Skystack.com</a></p>	
+	<div class="content">
+	<p>To manage this server visit <a href="http://my.skystack.com">my.skystack.com</a></p>	
 	
 	<?php
 	
@@ -30,19 +37,6 @@
 	
 	?>
 </div>
-	<div style="clear:both;"></div>
-</div>
-
-<div id="footer">
-	<a href="http://www.skystack.com/">Home</a> • 
-	<a href="http://help.skystack.com/help/faqs">Knowledge Base</a> • 
-	<a href="http://help.skystack.com/help/faqs">FAQ</a> • 
-	<a href="http://www.skystack.com/privacy">Privacy</a> • 
-	<a href="http://www.skystack.com/terms-of-service">Terms of Service</a>
-	<hr/>Skystack • Version: v0.09b	
-
-	<div class="small">© Copyright 2010 Skystack Limited (#06873486), All Rights Reserved.
-	Skystack® and the 'Stack' device are registered trademarks of Skystack Limited. Company registered in England and Wales.</div>
 
 </div>
 </body>	
