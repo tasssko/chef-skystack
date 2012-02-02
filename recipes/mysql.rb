@@ -57,10 +57,10 @@ node["mysql_databases"].each do |db|
       user "root"
       cwd "/tmp"
       code <<-EOH
-        mysql_conf = "/opt/skystack/bootstrapper/etc/.mysql.#{db["user"]}.shadow"
+        mysql_conf = "/opt/skystack/etc/.mysql.#{db["user"]}.shadow"
         open(mysql_conf, 'a') do |f| f << "#{new_password}" end
       EOH
-      only_if do ! File.exists?( "/opt/skystack/bootstrapper/etc/.mysql.#{db["user"]}.shadow" ) end
+      only_if do ! File.exists?( "/opt/skystack/etc/.mysql.#{db["user"]}.shadow" ) end
       action :run
    end
 end

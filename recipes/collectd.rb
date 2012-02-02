@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-include_recipe "collectd_plugins"
+include_recipe "collectd-plugins"
 
