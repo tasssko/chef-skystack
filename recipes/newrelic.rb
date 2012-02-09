@@ -26,13 +26,11 @@ node["newrelic_agent"].each do |nr|
   
   include_recipe "newrelic::default"
   
-  if(nr["is_php_enabled"] == "1")
-    
+  if(nr["is_php_enabled"] == true)
     include_recipe "newrelic::php"
-  
-#  elsif (nr['ruby'] == "1")
-#    include_recipe "newrelic::ruby"
-  
+  end
+  if (nr["is_sysmond_enabled"] == true)
+    include_recipe "newrelic::sysmond"
   end
   
 end

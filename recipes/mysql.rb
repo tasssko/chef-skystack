@@ -32,12 +32,12 @@ include_recipe "mysql::server"
 
 ruby_block "fetch_root_password" do
   block do
-    if File.exists?( mysql_conf ) 
       node[:mysql][:server_root_password] = File.read mysql_conf
-    end
   end
   only_if do File.exists?( mysql_conf ) end
 end
+
+print node[:mysql][:server_root_password]
 
 node["mysql_databases"].each do |db|
    new_password = secure_password
